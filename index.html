@@ -1,498 +1,430 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Bhavya Bhardwaj - developer portfolio focused on AI, full-stack development, projects, skills, and experience."
-    />
-    <title>Bhavya Bhardwaj | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <canvas class="stars-canvas" id="starsCanvas" aria-hidden="true"></canvas>
-    <div class="page-glow" aria-hidden="true"></div>
 
-    <header class="site-header" id="siteHeader">
-      <nav class="navbar container" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="Bhavya Bhardwaj home">
-          <span>BB</span><span>.</span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Bhavya Bhardwaj - developer portfolio focused on AI, full-stack development, projects, skills, and experience." />
+  <title>Bhavya Bhardwaj | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+<body>
+  <canvas class="stars-canvas" id="starsCanvas" aria-hidden="true"></canvas>
+  <div class="page-glow" aria-hidden="true"></div>
 
-        <div class="nav-links" id="navLinks">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Bhavya Bhardwaj home">
+        <span>BB</span><span>.</span>
+      </a>
 
-    <main>
-      <section class="hero section" id="home">
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Full-stack Developer</p>
-            <h1>Bhavya Bhardwaj</h1>
-            <h2>
-              Building real-world systems using AI and <br />Full-stack
-              development
-            </h2>
-            <div class="proof-chips" aria-label="Portfolio highlights">
-              <span>2+ Full-stack Projects</span>
-              <span>FOSEE Intern (IIT Bombay)</span>
-              <span>AI + System Development</span>
-            </div>
-            <p class="hero-intro">
-              CSE student building practical AI and full-stack systems.
-            </p>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-            <div class="hero-actions" aria-label="Hero links">
-              <a
-                class="btn btn-primary"
-                href="https://github.com/bhavyabhardwaj001"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.1c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
-                  />
-                </svg>
-                GitHub
-              </a>
-              <a class="btn btn-secondary" href="#contact">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-7.07 5.05a.9.9 0 0 1-1.06 0L4.4 8.25a1 1 0 1 1 1.16-1.63L12 11.22l6.44-4.6a1 1 0 1 1 1.16 1.63Z"
-                  />
-                </svg>
-                Contact
-              </a>
-            </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Full-stack Developer</p>
+          <h1>Bhavya Bhardwaj</h1>
+          <h2>
+            Building real-world systems using AI and <br />Full-stack
+            development
+          </h2>
+          <div class="proof-chips" aria-label="Portfolio highlights">
+            <span>2+ Full-stack Projects</span>
+            <span>FOSEE Intern (IIT Bombay)</span>
+            <span>AI + System Development</span>
           </div>
+          <p class="hero-intro">
+            CSE student building practical AI and full-stack systems.
+          </p>
 
-          <div
-            class="hero-visual reveal"
-            aria-label="Developer system illustration"
-          >
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="code-card">
-              <div class="code-card-top">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="code-lines">
-                <p><span>const</span> developer = "Bhavya";</p>
-                <p><span>build</span>("AI systems");</p>
-                <p><span>ship</span>("full-stack apps");</p>
-              </div>
-            </div>
-            <div class="metric-card">
-              <span>Focus</span>
-              <strong>Practical AI</strong>
-            </div>
-            <div class="stack-card">
-              <span>React</span>
-              <span>Flask</span>
-              <span>NLP</span>
-            </div>
+          <div class="hero-actions" aria-label="Hero links">
+            <a class="btn btn-primary" href="https://github.com/bhavyabhardwaj001" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.1c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
+              </svg>
+              GitHub
+            </a>
+            <a class="btn btn-secondary" href="#contact">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-.4 4.25-7.07 5.05a.9.9 0 0 1-1.06 0L4.4 8.25a1 1 0 1 1 1.16-1.63L12 11.22l6.44-4.6a1 1 0 1 1 1.16 1.63Z" />
+              </svg>
+              Contact
+            </a>
           </div>
         </div>
-      </section>
 
-      <section class="section" id="about">
-        <div class="container narrow reveal">
-          <p class="section-kicker">About</p>
-          <h2 class="section-title">Focused on useful, scalable systems.</h2>
-          <p class="section-copy">
-            I am a CSE student building practical applications across AI and
-            full-stack development. My work focuses on clean user experiences,
-            reliable backend systems, and thoughtful use of AI to solve real
-            student and campus problems.
+        <div class="hero-visual reveal" aria-label="Developer system illustration">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="code-card">
+            <div class="code-card-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="code-lines">
+              <p><span>const</span> developer = "Bhavya";</p>
+              <p><span>build</span>("AI systems");</p>
+              <p><span>ship</span>("full-stack apps");</p>
+            </div>
+          </div>
+          <div class="metric-card">
+            <span>Focus</span>
+            <strong>Practical AI</strong>
+          </div>
+          <div class="stack-card">
+            <span>React</span>
+            <span>Flask</span>
+            <span>NLP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow reveal">
+        <p class="section-kicker">About</p>
+        <h2 class="section-title">Focused on useful, scalable systems.</h2>
+        <p class="section-copy">
+          I am a CSE student building practical applications across AI and
+          full-stack development. My work focuses on clean user experiences,
+          reliable backend systems, and thoughtful use of AI to solve real
+          student and campus problems.
+        </p>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Projects</p>
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-subtitle">
+            Three project-focused systems with clear product goals, practical
+            workflows, and end-to-end implementation.
           </p>
         </div>
-      </section>
 
-      <section class="section projects-section" id="projects">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-kicker">Projects</p>
-            <h2 class="section-title">Featured Work</h2>
-            <p class="section-subtitle">
-              Three project-focused systems with clear product goals,
-              practical workflows, and end-to-end implementation.
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <a class="project-media" href="https://github.com/bhavyabhardwaj001/personalized-mental-health-assistant"
+              target="_blank" rel="noreferrer" aria-label="View Mental Health Assistant project">
+              <img src="./mindease.png" alt="Mental Health Assistant project screenshot" />
+            </a>
+            <div class="project-card-header">
+              <p class="project-index">01</p>
+              <h3>Mental Health Assistant (MindEase)</h3>
+            </div>
+            <p class="project-description">
+              A full-stack AI-powered mental health chatbot designed to
+              provide real-time emotional support and improve student
+              well-being.
             </p>
-          </div>
 
-          <div class="projects-grid">
-            <article class="project-card reveal">
-              <a
-                class="project-media"
-                href="https://github.com/bhavyabhardwaj001/personalized-mental-health-assistant"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="View Mental Health Assistant project"
-              >
-                <img
-                  src="https://via.placeholder.com/600x350/100b1e/c66bff?text=MindEase+Screenshot"
-                  alt="Mental Health Assistant project screenshot"
-                />
-              </a>
-              <div class="project-card-header">
-                <p class="project-index">01</p>
-                <h3>Mental Health Assistant (MindEase)</h3>
-              </div>
-              <p class="project-description">
-                A full-stack AI-powered mental health chatbot designed to
-                provide real-time emotional support and improve student
-                well-being.
-              </p>
-
-              <div class="project-block">
-                <h4>Tech Stack</h4>
-                <div class="inline-stack">
-                  <span>Python</span>
-                  <span>Flask</span>
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>SQLite</span>
-                  <span>NLP (BlenderBot)</span>
-                  <span>NLTK (VADER)</span>
-                </div>
-              </div>
-
-              <div class="project-block">
-                <h4>Key Features</h4>
-                <ul class="feature-list">
-                  <li>Real-time conversational chatbot using NLP</li>
-                  <li>Sentiment analysis to detect emotional state</li>
-                  <li>Mood tracking and journaling system</li>
-                  <li>Personalized tips and mental health resources</li>
-                  <li>Secure user data storage and session handling</li>
-                </ul>
-              </div>
-
-              <div class="project-role">
-                <h4>My Role</h4>
-                <p>
-                  Developed the complete system including frontend interface,
-                  backend APIs, NLP integration, and database management.
-                </p>
-              </div>
-
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="https://github.com/bhavyabhardwaj001/personalized-mental-health-assistant"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>GitHub</span>
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 17 17 7M9 7h8v8" />
-                  </svg>
-                </a>
-                <span class="project-link project-link-secondary project-link-disabled" aria-disabled="true">
-                  <span>Live Demo</span>
-                  <span>Coming Soon</span>
-                </span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <a
-                class="project-media"
-                href="https://github.com/bhavyabhardwaj001/student-activity-hub"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="View Student Activity Platform project"
-              >
-                <img
-                  src="https://via.placeholder.com/600x350/100b1e/c66bff?text=Student+Activity+Platform"
-                  alt="Student Activity Platform project screenshot"
-                />
-              </a>
-              <div class="project-card-header">
-                <p class="project-index">02</p>
-                <h3>Student Activity Platform</h3>
-              </div>
-              <p class="project-description">
-                A centralized full-stack platform that streamlines event
-                management and improves student engagement across campus.
-              </p>
-
-              <div class="project-block">
-                <h4>Tech Stack</h4>
-                <div class="inline-stack">
-                  <span>React.js</span>
-                  <span>Node.js</span>
-                  <span>Express.js</span>
-                  <span>MongoDB</span>
-                </div>
-              </div>
-
-              <div class="project-block">
-                <h4>Key Features</h4>
-                <ul class="feature-list">
-                  <li>Centralized event discovery and registration</li>
-                  <li>Role-based access system (Student, Admin, Club)</li>
-                  <li>Personalized dashboard for tracking participation</li>
-                  <li>Search and filtering system for events</li>
-                  <li>Secure authentication using JWT</li>
-                </ul>
-              </div>
-
-              <div class="project-role">
-                <h4>My Role</h4>
-                <p>
-                  Built the complete full-stack system including frontend UI,
-                  backend APIs, authentication, and database architecture.
-                </p>
-              </div>
-
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="https://github.com/bhavyabhardwaj001/student-activity-hub"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>GitHub</span>
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 17 17 7M9 7h8v8" />
-                  </svg>
-                </a>
-                <span class="project-link project-link-secondary project-link-disabled" aria-disabled="true">
-                  <span>Live Demo</span>
-                  <span>Coming Soon</span>
-                </span>
-              </div>
-            </article>
-
-            <article class="project-card reveal">
-              <a
-                class="project-media project-media-cli"
-                href="https://github.com/bhavyabhardwaj001/esim-tool-manager"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="View eSim Automated Tool Manager project"
-              >
-                <img
-                  src="https://via.placeholder.com/600x350/100b1e/c66bff?text=eSim+CLI+Tool+Manager"
-                  alt="eSim Automated Tool Manager CLI screenshot"
-                />
-              </a>
-              <div class="project-card-header">
-                <p class="project-index">03</p>
-                <h3>eSim Automated Tool Manager</h3>
-              </div>
-              <p class="project-description">
-                A Python-based CLI tool that automates installation, updates,
-                and management of dependencies for the eSim EDA environment.
-              </p>
-
-              <div class="project-block">
-                <h4>Tech Stack</h4>
-                <div class="inline-stack">
-                  <span>Python</span>
-                  <span>CLI</span>
-                  <span>Linux</span>
-                  <span>System Automation</span>
-                </div>
-              </div>
-
-              <div class="project-block">
-                <h4>Key Features</h4>
-                <ul class="feature-list">
-                  <li>Install and manage tools like Ngspice and KiCad</li>
-                  <li>Bulk installation of all required tools</li>
-                  <li>Version checking and tool status monitoring</li>
-                  <li>Dependency checking system</li>
-                  <li>Logging system with timestamps</li>
-                  <li>Clean CLI interface with colored output</li>
-                  <li>Linux-based system integration (APT)</li>
-                </ul>
-              </div>
-
-              <div class="project-role">
-                <h4>My Role</h4>
-                <p>
-                  Developed the complete system including CLI interface,
-                  installation logic, dependency management, and system-level
-                  automation.
-                </p>
-              </div>
-
-              <div class="project-actions">
-                <a
-                  class="project-link"
-                  href="https://github.com/bhavyabhardwaj001/esim-tool-manager"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>GitHub</span>
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 17 17 7M9 7h8v8" />
-                  </svg>
-                </a>
-                <a
-                  class="project-link project-link-secondary"
-                  href="https://drive.google.com/file/d/10sTy7BtTTtjfLRVtjQQFvRXJnT03xrqA/view"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>Live Demo</span>
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 17 17 7M9 7h8v8" />
-                  </svg>
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="skills">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-kicker">Skills</p>
-            <h2 class="section-title">Technical Skillset</h2>
-          </div>
-
-          <div class="skills-grid">
-            <article class="skill-group reveal">
-              <h3>Languages</h3>
-              <div class="skill-tags">
-                <span>C++</span>
+            <div class="project-block">
+              <h4>Tech Stack</h4>
+              <div class="inline-stack">
                 <span>Python</span>
-                <span>JavaScript</span>
-              </div>
-            </article>
-
-            <article class="skill-group reveal">
-              <h3>Web &amp; Tech</h3>
-              <div class="skill-tags">
+                <span>Flask</span>
                 <span>HTML</span>
                 <span>CSS</span>
-                <span>React</span>
+                <span>JavaScript</span>
+                <span>SQLite</span>
+                <span>NLP (BlenderBot)</span>
+                <span>NLTK (VADER)</span>
+              </div>
+            </div>
+
+            <div class="project-block">
+              <h4>Key Features</h4>
+              <ul class="feature-list">
+                <li>Real-time conversational chatbot using NLP</li>
+                <li>Sentiment analysis to detect emotional state</li>
+                <li>Mood tracking and journaling system</li>
+                <li>Personalized tips and mental health resources</li>
+                <li>Secure user data storage and session handling</li>
+              </ul>
+            </div>
+
+            <div class="project-role">
+              <h4>My Role</h4>
+              <p>
+                Developed the complete system including frontend interface,
+                backend APIs, NLP integration, and database management.
+              </p>
+            </div>
+
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/bhavyabhardwaj001/personalized-mental-health-assistant"
+                target="_blank" rel="noreferrer">
+                <span>GitHub</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+              <a class="project-link project-link-secondary" href="YOUR_LIVE_LINK_HERE" target="_blank"
+                rel="noreferrer">
+                <span>Live Demo</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-media" href="https://github.com/bhavyabhardwaj001/student-activity-hub" target="_blank"
+              rel="noreferrer" aria-label="View Student Activity Platform project">
+              <img src="/sah.png" alt="Student Activity Platform project screenshot" />
+            </a>
+            <div class="project-card-header">
+              <p class="project-index">02</p>
+              <h3>Student Activity Platform</h3>
+            </div>
+            <p class="project-description">
+              A centralized full-stack platform that streamlines event
+              management and improves student engagement across campus.
+            </p>
+
+            <div class="project-block">
+              <h4>Tech Stack</h4>
+              <div class="inline-stack">
+                <span>React.js</span>
                 <span>Node.js</span>
-                <span>SQL</span>
+                <span>Express.js</span>
                 <span>MongoDB</span>
               </div>
-            </article>
-
-            <article class="skill-group reveal">
-              <h3>Tools</h3>
-              <div class="skill-tags">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>VS Code</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="experience">
-        <div class="container narrow">
-          <div class="section-heading reveal">
-            <p class="section-kicker">Experience</p>
-            <h2 class="section-title">Internship</h2>
-          </div>
-
-          <article class="experience-card reveal">
-            <div>
-              <p class="experience-label">FOSEE Internship</p>
-              <h3>IIT Bombay</h3>
             </div>
-            <p>
-              Selected for a 2-month internship under the FOSSEE program at IIT
-              Bombay.
-            </p>
-            <div class="experience-work">
-              <h4>Work</h4>
+
+            <div class="project-block">
+              <h4>Key Features</h4>
+              <ul class="feature-list">
+                <li>Centralized event discovery and registration</li>
+                <li>Role-based access system (Student, Admin, Club)</li>
+                <li>Personalized dashboard for tracking participation</li>
+                <li>Search and filtering system for events</li>
+                <li>Secure authentication using JWT</li>
+              </ul>
+            </div>
+
+            <div class="project-role">
+              <h4>My Role</h4>
               <p>
-                Developing a Package Downloader (eSim Tool Manager) to automate
-                installation and management of tools and dependencies, focusing
-                on system-level workflows and usability.
+                Built the complete full-stack system including frontend UI,
+                backend APIs, authentication, and database architecture.
               </p>
+            </div>
+
+            <div class="project-actions">
+              <a class="project-link" href="https://github.com/bhavyabhardwaj001/student-activity-hub" target="_blank"
+                rel="noreferrer">
+                <span>GitHub</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+              <a class="project-link project-link-secondary" href="YOUR_LIVE_LINK_HERE" target="_blank"
+                rel="noreferrer">
+                <span>Live Demo</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-media project-media-cli" href="https://github.com/bhavyabhardwaj001/esim-tool-manager"
+              target="_blank" rel="noreferrer" aria-label="View eSim Automated Tool Manager project">
+              <img src="/cli.png" alt="eSim Automated Tool Manager CLI screenshot" />
+            </a>
+            <div class="project-card-header">
+              <p class="project-index">03</p>
+              <h3>eSim Automated Tool Manager</h3>
+            </div>
+            <p class="project-description">
+              A Python-based CLI tool that automates installation, updates,
+              and management of dependencies for the eSim EDA environment.
+            </p>
+
+            <div class="project-block">
+              <h4>Tech Stack</h4>
+              <div class="inline-stack">
+                <span>Python</span>
+                <span>CLI</span>
+                <span>Linux</span>
+                <span>System Automation</span>
+              </div>
+            </div>
+
+            <div class="project-block">
+              <h4>Key Features</h4>
+              <ul class="feature-list">
+                <li>Install and manage tools like Ngspice and KiCad</li>
+                <li>Bulk installation of all required tools</li>
+                <li>Version checking and tool status monitoring</li>
+                <li>Dependency checking system</li>
+                <li>Logging system with timestamps</li>
+                <li>Clean CLI interface with colored output</li>
+                <li>Linux-based system integration (APT)</li>
+              </ul>
+            </div>
+
+            <div class="project-role">
+              <h4>My Role</h4>
+              <p>
+                Developed the complete system including CLI interface,
+                installation logic, dependency management, and system-level
+                automation.
+              </p>
+            </div>
+
+            <div class="project-actions">
+              <span class="project-link project-link-disabled" aria-disabled="true">
+                <span>GitHub</span>
+                <span>Private Repo</span>
+              </span>
+              
+              </a>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section contact-section" id="contact">
-        <div class="container">
-          <div class="contact-panel reveal">
-            <div>
-              <p class="section-kicker">Contact</p>
-              <h2 class="section-title">Let’s build something practical.</h2>
-              <p class="section-copy">
-                Open to project discussions, internships, and full-stack or AI
-                development opportunities.
-              </p>
-            </div>
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Skills</p>
+          <h2 class="section-title">Technical Skillset</h2>
+        </div>
 
-            <div class="contact-links">
-              <a href="mailto:bhardwajbhavya026@gmail.com">
-                <span>Email</span>
-                <strong>bhardwajbhavya026@gmail.com</strong>
-              </a>
-              <a
-                href="https://github.com/bhavyabhardwaj001"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>GitHub</span>
-                <strong>https://github.com/bhavyabhardwaj001</strong>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/bhavya-bhardwaj-1ba26926b/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>LinkedIn</span>
-                <strong
-                  >https://www.linkedin.com/in/bhavya-bhardwaj-1ba26926b/</strong
-                >
-              </a>
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span>C++</span>
+              <span>Python</span>
+              <span>JavaScript</span>
             </div>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Web &amp; Tech</h3>
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>SQL</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+          <article class="skill-group reveal">
+            <h3>Tools</h3>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Experience</p>
+          <h2 class="section-title">Internship</h2>
+        </div>
+
+        <article class="experience-card reveal">
+          <div>
+            <p class="experience-label">FOSEE Internship</p>
+            <h3>IIT Bombay</h3>
+          </div>
+          <p>
+            Selected for a 2-month internship under the FOSSEE program at IIT
+            Bombay.
+          </p>
+          <div class="experience-work">
+            <h4>Work</h4>
+            <p>
+              Developing a Package Downloader (eSim Tool Manager) to automate
+              installation and management of tools and dependencies, focusing
+              on system-level workflows and usability.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title">Let’s build something practical.</h2>
+            <p class="section-copy">
+              Open to project discussions, internships, and full-stack or AI
+              development opportunities.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:bhardwajbhavya026@gmail.com">
+              <span>Email</span>
+              <strong>bhardwajbhavya026@gmail.com</strong>
+            </a>
+            <a href="https://github.com/bhavyabhardwaj001" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <strong>https://github.com/bhavyabhardwaj001</strong>
+            </a>
+            <a href="https://www.linkedin.com/in/bhavya-bhardwaj-1ba26926b/" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span>
+              <strong>https://www.linkedin.com/in/bhavya-bhardwaj-1ba26926b/</strong>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>© 2026 Bhavya Bhardwaj. Built with HTML, CSS, and JavaScript.</p>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Bhavya Bhardwaj. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
