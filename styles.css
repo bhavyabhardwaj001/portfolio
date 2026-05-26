@@ -11,6 +11,7 @@
   --accent: #c66bff;
   --accent-2: #8c4dff;
   --accent-soft: rgba(198, 107, 255, 0.14);
+  --accent-cyan: #00f0ff;
   --shadow: 0 24px 80px rgba(119, 55, 255, 0.18);
   --radius: 8px;
   --max-width: 1120px;
@@ -212,6 +213,13 @@ textarea {
   text-transform: uppercase;
 }
 
+.hero-name {
+  font-size: 1.25rem;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
 .hero h1,
 .section-title {
   margin: 0;
@@ -223,16 +231,18 @@ textarea {
 }
 
 .hero h1 {
-  max-width: 760px;
+  max-width: 900px;
+  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  line-height: 1.05;
 }
 
 .hero h2 {
   max-width: 720px;
   margin: 24px 0 0;
-  color: var(--text);
-  font-size: clamp(1.35rem, 3.1vw, 2.6rem);
-  font-weight: 700;
-  line-height: 1.12;
+  color: var(--muted);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0;
 }
 
@@ -249,12 +259,56 @@ textarea {
   margin: 24px 0 0;
 }
 
+.status-strip {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: rgba(0, 240, 255, 0.05);
+  color: var(--accent-cyan);
+  font-family: "JetBrains Mono", Consolas, monospace;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.status-dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-cyan);
+}
+
+.status-dot::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background-color: var(--accent-cyan);
+  opacity: 0.6;
+  animation: pulse-dot 2s ease-out infinite;
+}
+
+@keyframes pulse-dot {
+  0% { transform: scale(0.5); opacity: 0.8; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
 .proof-chips {
   display: flex;
   max-width: 700px;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 24px;
+}
+
+.proof-chips.small-badges {
+  margin-top: 14px;
+  gap: 8px;
 }
 
 .proof-chips span {
@@ -267,6 +321,12 @@ textarea {
   font-family: "JetBrains Mono", Consolas, monospace;
   font-size: 0.78rem;
   font-weight: 700;
+}
+
+.proof-chips.small-badges span {
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  opacity: 0.85;
 }
 
 .hero-actions {
