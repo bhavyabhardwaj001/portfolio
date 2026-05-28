@@ -198,3 +198,4 @@ projectCards.forEach(card => {
     card.style.setProperty('--rotate-y', '0deg');
   });
 });
+

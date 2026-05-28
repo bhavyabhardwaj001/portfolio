@@ -197,8 +197,8 @@ textarea {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.07fr) minmax(320px, 0.93fr);
-  gap: clamp(2.5rem, 7vw, 6rem);
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
 
@@ -380,155 +380,177 @@ textarea {
   background: var(--accent-soft);
 }
 
+
+
+/* Compact Proof Card */
 .hero-visual {
   position: relative;
-  min-height: 430px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent 34%),
-    rgba(16, 11, 30, 0.58);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  isolation: isolate;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  perspective: 1000px;
 }
 
 .hero-visual::before {
-  position: absolute;
-  inset: 36px;
-  border: 1px solid rgba(198, 107, 255, 0.16);
-  border-radius: 50%;
   content: "";
-}
-
-.hero-visual::after {
   position: absolute;
-  width: 220px;
-  height: 220px;
-  right: -72px;
-  bottom: -64px;
-  border-radius: 999px;
-  background: rgba(198, 107, 255, 0.18);
-  filter: blur(8px);
-  content: "";
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(198, 107, 255, 0.15) 0%, rgba(0, 240, 255, 0.08) 40%, transparent 70%);
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
 }
 
-.orbit {
-  position: absolute;
-  border: 1px solid rgba(198, 107, 255, 0.28);
-  border-radius: 50%;
-  animation: float 8s ease-in-out infinite;
-}
-
-.orbit-one {
-  width: 240px;
-  height: 240px;
-  top: 76px;
-  left: 55%;
-}
-
-.orbit-two {
-  width: 130px;
-  height: 130px;
-  top: 45px;
-  left: 14%;
-  animation-delay: -3s;
-}
-
-.code-card,
-.metric-card,
-.stack-card {
-  position: absolute;
+.proof-card {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  background: rgba(10, 7, 18, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(198, 107, 255, 0.15);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 0 20px rgba(198, 107, 255, 0.05);
   z-index: 2;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius);
-  background: rgba(9, 7, 17, 0.82);
-  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(14px);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-.code-card {
-  top: 86px;
-  left: 42px;
-  right: 42px;
-  padding: 18px;
+.proof-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 240, 255, 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 240, 255, 0.1);
 }
 
-.code-card-top {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 22px;
+.proof-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.code-card-top span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-}
-
-.code-card-top span:nth-child(2) {
-  background: #8c4dff;
-}
-
-.code-card-top span:nth-child(3) {
-  background: #f6f2ff;
-}
-
-.code-lines {
-  display: grid;
-  gap: 13px;
-  font-family: "JetBrains Mono", Consolas, monospace;
-  font-size: clamp(0.82rem, 1.7vw, 0.98rem);
-}
-
-.code-lines p {
-  margin: 0;
-  color: var(--muted);
-  white-space: nowrap;
-}
-
-.code-lines span {
-  color: var(--accent);
-}
-
-.metric-card {
-  right: 34px;
-  bottom: 104px;
-  padding: 16px 18px;
-}
-
-.metric-card span {
-  display: block;
-  margin-bottom: 5px;
-  color: var(--muted-2);
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.metric-card strong {
-  color: var(--text);
+.proof-header h3 {
   font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.05em;
+  margin: 0 0 4px;
 }
 
-.stack-card {
+.proof-header p {
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  margin: 0;
+  font-family: "JetBrains Mono", Consolas, monospace;
+}
+
+.proof-section {
+  margin-bottom: 20px;
+}
+
+.proof-section:last-child {
+  margin-bottom: 0;
+}
+
+.proof-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.proof-live {
   display: flex;
-  left: 36px;
-  bottom: 42px;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0;
+  font-weight: 500;
+}
+
+.proof-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+  animation: pulse-proof-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-proof-dot {
+  0% { opacity: 0.6; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.6; transform: scale(0.95); }
+}
+
+.proof-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proof-list li {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 6px;
+  opacity: 0.9;
+  position: relative;
+  padding-left: 14px;
+}
+
+.proof-list li::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.stack-tags {
+  display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 12px;
 }
 
-.stack-card span {
-  border: 1px solid rgba(198, 107, 255, 0.22);
-  border-radius: 999px;
-  padding: 7px 10px;
-  background: rgba(198, 107, 255, 0.09);
-  color: var(--text);
+.stack-tags span {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
   font-family: "JetBrains Mono", Consolas, monospace;
-  font-size: 0.78rem;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.stack-tags span:hover {
+  background: rgba(198, 107, 255, 0.15);
+  border-color: rgba(198, 107, 255, 0.4);
+  color: #fff;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .hero-visual {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .hero-visual::before {
+    display: none;
+  }
+  
+  .proof-card {
+    max-width: 100%;
+  }
 }
 
 .section-heading {
