@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import StarsCanvas from './components/StarsCanvas';
+import CustomCursor from './components/CustomCursor';
 
 // Keep the old vanilla JS reveals temporarily until we port them to Framer Motion
 function initVanillaReveals() {
@@ -33,6 +34,7 @@ export default function App() {
 
   return (
     <>
+      <CustomCursor />
       <StarsCanvas />
       <div className="page-glow" aria-hidden="true"></div>
       <Navbar />
