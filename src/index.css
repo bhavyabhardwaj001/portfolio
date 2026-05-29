@@ -405,6 +405,22 @@ textarea {
   pointer-events: none;
 }
 
+.hero-visual-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 340px;
+  align-items: flex-end;
+  z-index: 2;
+  position: relative;
+}
+
+.code-keyword { color: var(--accent); }
+.code-var { color: #00f0ff; }
+.code-string { color: #10b981; }
+.code-func { color: #ffbd2e; }
+
 .proof-card {
   position: relative;
   width: 100%;

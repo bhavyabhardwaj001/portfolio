@@ -126,36 +126,39 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0, rotateY: 0 }}
           transition={{ delay: 1.0, duration: 1.2, type: 'spring' }}
         >
-          <div className="proof-card">
-            <div className="proof-header">
-              <h3>BHAVYA BHARDWAJ</h3>
-              <p>Full-stack Developer<br/>AI + Product Systems</p>
-            </div>
-            
-            <div className="proof-section">
-              <span className="proof-label">Currently</span>
-              <p className="proof-live">
-                <span className="proof-dot"></span>
-                FOSSEE Intern @ IIT Bombay
-              </p>
-            </div>
-            
-            <div className="proof-section">
-              <span className="proof-label">Building</span>
-              <ul className="proof-list">
-                <li>MindEase AI</li>
-                <li>Student Activity Platform</li>
-                <li>eSim Automation Toolkit</li>
-              </ul>
-            </div>
-            
-            <div className="proof-section proof-stack">
-              <span className="proof-label">Stack</span>
-              <div className="stack-tags">
-                <span>React</span>
-                <span>Flask</span>
-                <span>Python</span>
-                <span>JS</span>
+          <div className="hero-visual-stack">
+
+            <div className="proof-card">
+              <div className="proof-header">
+                <h3>BHAVYA BHARDWAJ</h3>
+                <p>Full-stack Developer<br/>AI + Product Systems</p>
+              </div>
+              
+              <div className="proof-section">
+                <span className="proof-label">Currently</span>
+                <p className="proof-live">
+                  <span className="proof-dot"></span>
+                  FOSSEE Intern @ IIT Bombay
+                </p>
+              </div>
+              
+              <div className="proof-section">
+                <span className="proof-label">Building</span>
+                <ul className="proof-list">
+                  <li>MindEase AI</li>
+                  <li>Student Activity Platform</li>
+                  <li>eSim Automation Toolkit</li>
+                </ul>
+              </div>
+              
+              <div className="proof-section proof-stack">
+                <span className="proof-label">Stack</span>
+                <div className="stack-tags">
+                  <span>React</span>
+                  <span>Flask</span>
+                  <span>Python</span>
+                  <span>JS</span>
+                </div>
               </div>
             </div>
           </div>
