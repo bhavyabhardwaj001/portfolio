@@ -29,6 +29,9 @@ export default function Navbar() {
           <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
           <a href="#experience" onClick={() => setIsOpen(false)}>Experience</a>
           <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
+          <a href="/resume.pdf" className="nav-resume-btn shimmer-btn" download>
+            Resume
+          </a>
         </div>
       </nav>
     </header>

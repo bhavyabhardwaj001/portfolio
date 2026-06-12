@@ -98,26 +98,27 @@ export default function Hero() {
             <motion.span initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 2.2 }}>eSim Automation Toolkit</motion.span>
           </motion.div>
 
-          <motion.div 
-            className="hero-actions" aria-label="Hero links"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 2.4, duration: 0.8 }}
-          >
-            <a className="btn btn-primary" href="#projects">
-              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M7 17 17 7M9 7h8v8" />
-              </svg>
-              View Projects
-            </a>
-            <a className="btn btn-secondary" href="https://github.com/bhavyabhardwaj001" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
-                <path
-                  d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.1c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" />
-              </svg>
-              GitHub
-            </a>
-          </motion.div>
+            <motion.div 
+              className="hero-actions" aria-label="Hero links"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2.4, duration: 0.8 }}
+            >
+              <a className="btn btn-primary" href="#projects">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+                View Systems
+              </a>
+              <a href="/resume.pdf" className="btn btn-secondary shimmer-btn" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Resume
+              </a>
+            </motion.div>
         </div>
 
         <motion.div 
